@@ -1,0 +1,91 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 95vh;
+    width: 95vw;
+    background-color: #f4f4f4;
+}
+.main-container {
+    
+    display: flex;
+    justify-content: space-evenly;
+}
+.left-container {
+    width: 25%;
+    height: 75vh;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    gap: 5px;
+}
+
+.armor-container, .weapon-container, .tool-container {
+    width: 30%;
+    height: 100%;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items: center;
+
+}
+.left-container-button {
+    aspect-ratio: 1/1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    height: auto;
+    background: linear-gradient(90deg, #e3f0ea, #d2e0e9);
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    text-decoration: none; 
+    margin-top: 15px;
+    
+}
+
+.left-container-button:hover {
+    cursor: pointer;
+}
+.left-container-button:hover:not(.seletected) {
+    box-shadow: 0 4px 8px rgba(122, 59, 59, 0.2); 
+}
+.left-container-button:active {
+    cursor: pointer;
+    background-color: gray;
+}
+.seletected {
+    box-shadow: 0 0 15px 0px rgba(42, 245, 152, 0.8), /* Green glow */
+                        0 0 15px 0px rgba(0, 158, 253, 0.8); /* Blue glow */
+}
+
+.left-container-button img {
+    width: 80%;
+    height: auto;
+    image-rendering: pixelated;
+}
+
+.middle-container {
+    width: 25%;
+    height: 50px;
+    background-color: green;
+}  
+
+.right-container {  
+    width: 35%;
+    height: 75vh;
+    background-color: blue;
+}
+
+.modelContainer {
+    width: 100%;
+    height: 100%;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,3 +1,4 @@
+import * as THREE from 'three';
 const leftContainer = document.querySelector('.left-container');
 const rightContainer = document.querySelector('.right-container');
 const middleContainer = document.querySelector('.middle-container');
